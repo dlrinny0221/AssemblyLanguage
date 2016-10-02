@@ -1,0 +1,25 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ASCII                   300B
+//	ASCIID                  316F
+//	ASCIIE                  316E
+//	CHECK                   3166
+//	DECRYPT                 31AB
+//	DLOOP                   31AE
+//	ED                      3009
+//	EK                      300A
+//	ELOOP                   3173
+//	ENCRYPT                 3171
+//	ERRORED                 317B
+//	FLIP                    31B8
+//	IM                      31C4
+//	INCHAR                  315D
+//	MSGARRAY                30EA
+//	NEWLINE                 300C
+//	OLOOP                   31BE
+//	OUTPUT                  31BD
+//	PROMPTCK                308C
+//	PROMPTED                3023
+//	PROMPTIM                30FE
+//	START                   300E
+//	TWENTY                  3170

@@ -1,0 +1,19 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ASCII                   30E8
+//	ASCII_OFFSET            30E9
+//	CORRECT                 3027
+//	FIRST                   30EA
+//	GREETING                3038
+//	MULTIPLICATION          30E5
+//	MULTIPLY                3023
+//	MULT_RESULT             30AF
+//	NEG                     302C
+//	NEWLINE                 3092
+//	PROMPT1                 3048
+//	PROMPT2                 306A
+//	SECOND                  30EB
+//	START                   3000
+//	USERINPUT1              30E6
+//	USERINPUT2              30E7
+//	Z                       302E

@@ -1,0 +1,14 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ENCRYPTKEY              3012
+//	ENDENCRYPTKEY           3018
+//	INPUTED                 3082
+//	INPUTEK                 3083
+//	MAXCHAR                 3085
+//	NEWLINE                 3080
+//	NUMARRAY                3099
+//	PROMPTED                301E
+//	PROMPTEK                3031
+//	PROMPTIM                305F
+//	RETURN                  3084
+//	START                   3000

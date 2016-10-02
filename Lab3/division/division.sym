@@ -1,0 +1,18 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ASCII                   30F6
+//	ASCII_OFFSET            30F7
+//	DIVISION                30F8
+//	DIV_RESULT              30AF
+//	GREETING                3038
+//	LOOPD                   3027
+//	NEGATIVE                302C
+//	NEWLINE                 3092
+//	PROMPT1                 3048
+//	PROMPT2                 306A
+//	R                       30F9
+//	REM                     30DF
+//	START                   3000
+//	USERINPUT1              30F4
+//	USERINPUT2              30F5
+//	ZERO                    302E

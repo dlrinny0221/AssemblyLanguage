@@ -1,0 +1,68 @@
+	.ORIG	x3000
+
+; branch to the start routine
+BR	START
+
+; clear all registers we may use
+	AND	R0, R0, 0
+	AND	R1, R0, 0
+	AND	R2, R0, 0
+	AND	R3, R0, 0
+	AND	R4, R0, 0
+	AND	R5, R0, 0
+	AND	R6, R0, 0
+	AND	R7, R0, 0
+
+START:
+	
+	LEA	R0, PROMPTED
+	PUTS
+
+CHECKED:
+	LD	R5, REALD
+	LD	R6, REALE
+	GETC
+	PUTC
+	ST	R0, INED
+	LD	R1, INED
+	ADD	R0, R1, R6
+	BRz	KEY
+	ADD	R0, R1, R5
+	BRz	KEY
+	LEA	R0, NEWLINE
+	PUTS
+	LEA	R0, ERRORED
+	PUTS
+	LEA	R0, NEWLINE
+	PUTS
+	BR	CHECKED
+
+KEY:
+	STI	R1, STOREED
+	LEA	R0, NEWLINE
+	PUTS
+	LEA	R0, DECISION
+	PUTS
+	LD	R0, STOREED
+	PUTC
+	LEA	R0, DECISION1
+	PUTS
+	
+	HALT
+
+
+; variables
+ASCII:		.FILL		#48
+ASCII_OFFSET:	.FILL		#-48
+REALE:		.FILL		#-69
+REALD:		.FILL		#-68
+INED:		.FILL		x2100
+STOREED:	.FILL		x3200
+
+; strings
+PROMPTED:	.STRINGZ	"Please enter E if you want to encrypt your message.\nPlease enter D if you want to decrypt your message.\n"
+ERRORED:	.STRINGZ	"THAT IS AN ILLEGAL CHARACTER. PLEASE TRY AGAIN."
+NEWLINE:	.STRINGZ	"\n"	
+DECISION:	.STRINGZ	"You want to--> "
+DECISION1:	.STRINGZ	" your message."
+	.END
